@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Starter Kit SCSS</title>
+        <title>Google Maps API Basics</title>
 
         <!-- favicons -->
         <link
@@ -40,18 +40,42 @@
 
         <!-- scripts -->
         <script src="./js/main.js" defer></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCDZpTOWIPYHGlkIKW1YaM5Xn-heFjREQ&callback=gotoBanff"
+            async
+            defer
+        ></script>
     </head>
     <body>
+        <div class="bkg-image"></div>
         <div class="container">
-            <header></header>
+            <header>
+                <h1>Google Maps API Basics</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
             <main>
-                <h1>Starter SASS Template</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Perferendis fugiat ipsa veritatis ducimus, maxime molestias
-                    quas minima recusandae, illum ipsum vitae odio perspiciatis
-                    quam aspernatur ex nulla repudiandae dicta? Necessitatibus.
-                </p>
+                <div class="main-area">
+                    <div class="sidebar">
+                        <ul>
+                            <li>
+                                <a href="javascript:gotoBanff()">Banff Town</a>
+                            </li>
+                            <li>
+                                <a href="javascript:gotoDrumheller()"
+                                    >Drumheller Town</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="map"></div>
+                </div>
             </main>
             <footer></footer>
         </div>

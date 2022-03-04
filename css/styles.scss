@@ -1,6 +1,5 @@
 @import "variables";
 @import "header";
-@import "main";
 
 // styles
 :root,
@@ -13,6 +12,9 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
     font-size: 16px; /* fallback */
+    line-height: 1.6;
+    height: 100%;
+    background-image: url("../img/mountains.jpg");
 }
 
 h1 {
@@ -33,7 +35,72 @@ h3 {
     font-weight: bold;
 }
 
+header {
+    text-align: center;
+    h1 {
+        padding: 3rem 0;
+        color: $lightColor;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: $lightColor;
+        ul {
+            display: flex;
+            gap: 4rem;
+            padding: 0.75rem;
+            li {
+                a {
+                    text-decoration: none;
+                    color: $darkColor;
+                    transition: 0.2s;
+                    &:hover {
+                        color: $themeColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .container {
-    max-width: 160rem;
-    margin: 0 auto;
+    max-width: 120rem;
+    margin: 6rem auto;
+    background-color: $darkColor;
+    color: $lightColor;
+    z-index: 2;
+    .main-area {
+        display: flex;
+        .sidebar {
+            padding: 1rem;
+            width: 25rem;
+            color: $themeColor;
+            ul {
+                li {
+                    a {
+                        display: block;
+                        color: $themeColor;
+                        text-decoration: none;
+                        text-align: center;
+                        padding: 1rem;
+                        transition: 0.2s;
+                        border: 0.1rem solid $themeColor;
+                        margin-bottom: 1rem;
+                        font-weight: bold;
+                        font-size: 1.8rem;
+                        &:hover {
+                            background-color: $themeColor;
+                            color: $darkColor;
+                        }
+                    }
+                }
+            }
+        }
+        #map {
+            flex-grow: 1;
+            padding: 1rem;
+            width: 80rem;
+            height: 60rem;
+        }
+    }
 }
