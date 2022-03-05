@@ -65,7 +65,7 @@ function gotoDrumheller() {
         ),
         map: map,
         title: "Riverside Park",
-        icon: "../assets/icons/playground.png",
+        icon: "assets/icons/playground.png",
     });
 
     let dinosaurMarker = new google.maps.Marker({
@@ -75,12 +75,12 @@ function gotoDrumheller() {
         ),
         map: map,
         title: "World's Largest Dinosaur",
-        icon: "../assets/icons/dinopark.png",
+        icon: "assets/icons/dinopark.png",
     });
 
     let dinosaurWindow = new google.maps.InfoWindow({
         content:
-            '<div class="info-popup"><h2>World\'s Largest Dinosaur</h2><div class="content-flex"><img src="../img/large-dinosaur.jpg" /><div class="information-center"><p>The model Tyrannosaurus was constructed of fiberglass and steel, with a height of 26.3 metres (86 ft) and a length of 46 metres (151 ft), considerably larger than the largest known specimens of the actual dinosaur, known as Sue which reached up to 12.8 m (42 ft) in length, and up to 4 m (13 ft) tall at the hips.</p><div class="links"><a href="#">Contact</a><a href="#">Phone</a><a href="#">Wiki</a></div></div></div>',
+            '<div class="info-popup"><h2>World\'s Largest Dinosaur</h2><div class="content-flex"><img src="img/large-dinosaur.jpg" /><div class="information-center"><p>The model Tyrannosaurus was constructed of fiberglass and steel, with a height of 26.3 metres (86 ft) and a length of 46 metres (151 ft), considerably larger than the largest known specimens of the actual dinosaur, known as Sue which reached up to 12.8 m (42 ft) in length, and up to 4 m (13 ft) tall at the hips.</p><div class="links"><a href="#">Contact</a><a href="#">Phone</a><a href="#">Wiki</a></div></div></div>',
     });
 
     google.maps.event.addListener(dinosaurMarker, "click", function () {
