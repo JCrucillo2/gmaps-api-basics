@@ -1,17 +1,10 @@
-# Starter Kit SASS Style
+# Google Maps API Basics Project for DMIT-2503
 
-just a simple SASS version of starter kit
+-   All styles are done from scratch.
 
-## Things to know
+## Sources
 
-- This personal starter kit template use SASS as its stylesheet.
-- You can create your own favicons with [favicon.io](https://favicon.io/favicon-generator/) and replace existing files in favicons folder.
+-   [Background Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersden.com%2Fbanff-national-park-canada-lake-wallpaper%2F2560x1440%2F&psig=AOvVaw1UHVsI86NLiVDwXH3SaLMh&ust=1646554816981000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJD3wenErvYCFQAAAAAdAAAAABAD)
+-   [World's Largest Dinosaur](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWorld%2527s_Largest_Dinosaur&psig=AOvVaw1dDn0vw95OR8rMmRamzi17&ust=1646554883292000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMi3-IrFrvYCFQAAAAAdAAAAABAD)
 
-## Requirements
-
-- Live SASS Compiler
-- Text editor (I prefer VS Code)
-
-## Preview
-
-[Starter Kit SASS Link](https://jcrucillo2.github.io/starter-kit-scss/)
+-   [Information Used](https://en.wikipedia.org/wiki/World%27s_Largest_Dinosaur)

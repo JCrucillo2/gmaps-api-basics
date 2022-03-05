@@ -11,6 +11,8 @@ body {
   line-height: 1.6;
   height: 100%;
   background-image: url("../img/mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -31,13 +33,26 @@ h3 {
   font-weight: bold;
 }
 
-header {
-  text-align: center;
+header .title-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .title-logo .fa-solid {
+  color: #ea9010;
 }
 
 header h1 {
   padding: 3rem 0;
   color: #ffffff;
+  margin-left: 1rem;
 }
 
 header nav {
@@ -74,7 +89,7 @@ header nav ul li a:hover {
   margin: 6rem auto;
   background-color: #212121;
   color: #ffffff;
-  z-index: 2;
+  border-radius: 0.5rem;
 }
 
 .container .main-area {
@@ -101,9 +116,10 @@ header nav ul li a:hover {
   margin-bottom: 1rem;
   font-weight: bold;
   font-size: 1.8rem;
+  border-radius: 0.5rem;
 }
 
-.container .main-area .sidebar ul li a:hover {
+.container .main-area .sidebar ul li a:hover, .container .main-area .sidebar ul li a:active, .container .main-area .sidebar ul li a.is-checked {
   background-color: #ea9010;
   color: #212121;
 }
@@ -115,5 +131,73 @@ header nav ul li a:hover {
   padding: 1rem;
   width: 80rem;
   height: 60rem;
+  border-radius: 0 0 0.5rem 0;
+}
+
+.info-popup {
+  color: #ea9010;
+}
+
+.info-popup h2 {
+  border-bottom: 0.1rem solid #ea9010;
+  background-color: #212121;
+  padding: 1rem;
+  text-align: center;
+}
+
+.info-popup .content-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-popup .information-center {
+  background-color: #212121;
+}
+
+.info-popup .information-center p {
+  padding: 1rem;
+  border-bottom: 0.1rem solid #ea9010;
+}
+
+.info-popup .information-center .links {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.info-popup .information-center .links a {
+  text-decoration: none;
+  color: #ea9010;
+  background-color: #212121;
+  padding: 1rem;
+  border: 0.1rem solid #ea9010;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.info-popup .information-center .links a:hover {
+  background-color: #ea9010;
+  color: #212121;
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track,
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece,
+.gm-style .gm-style-iw-c,
+.gm-style .gm-style-iw-t::after {
+  background: #ea9010;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -15,6 +15,8 @@ body {
     line-height: 1.6;
     height: 100%;
     background-image: url("../img/mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -36,10 +38,18 @@ h3 {
 }
 
 header {
-    text-align: center;
+    .title-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .fa-solid {
+            color: $themeColor;
+        }
+    }
     h1 {
         padding: 3rem 0;
         color: $lightColor;
+        margin-left: 1rem;
     }
     nav {
         display: flex;
@@ -68,7 +78,7 @@ header {
     margin: 6rem auto;
     background-color: $darkColor;
     color: $lightColor;
-    z-index: 2;
+    border-radius: 0.5rem;
     .main-area {
         display: flex;
         .sidebar {
@@ -88,7 +98,10 @@ header {
                         margin-bottom: 1rem;
                         font-weight: bold;
                         font-size: 1.8rem;
-                        &:hover {
+                        border-radius: 0.5rem;
+                        &:hover,
+                        &:active,
+                        &.is-checked {
                             background-color: $themeColor;
                             color: $darkColor;
                         }
@@ -101,6 +114,59 @@ header {
             padding: 1rem;
             width: 80rem;
             height: 60rem;
+            border-radius: 0 0 0.5rem 0;
         }
     }
+}
+
+// infowindow gmaps
+.info-popup {
+    color: $themeColor;
+    h2 {
+        border-bottom: 0.1rem solid $themeColor;
+        background-color: $darkColor;
+        padding: 1rem;
+        text-align: center;
+    }
+    .content-flex {
+        display: flex;
+    }
+    .information-center {
+        background-color: $darkColor;
+        p {
+            padding: 1rem;
+            border-bottom: 0.1rem solid $themeColor;
+        }
+        .links {
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            gap: 4rem;
+            margin-top: 3rem;
+            a {
+                text-decoration: none;
+                color: $themeColor;
+                background-color: $darkColor;
+                padding: 1rem;
+                border: 0.1rem solid $themeColor;
+                border-radius: 0.5rem;
+                transition: 0.2s;
+                font-weight: bold;
+                font-size: 1.8rem;
+                &:hover {
+                    background-color: $themeColor;
+                    color: $darkColor;
+                }
+            }
+        }
+    }
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track,
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece,
+.gm-style .gm-style-iw-c,
+.gm-style .gm-style-iw-t::after {
+    background: $themeColor;
 }
