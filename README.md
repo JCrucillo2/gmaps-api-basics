@@ -2,6 +2,10 @@
 
 -   All styles are done from scratch.
 
+## Link
+
+- https://jcrucillo2.github.io/gmaps-api-basics/
+
 ## Sources
 
 -   [Background Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersden.com%2Fbanff-national-park-canada-lake-wallpaper%2F2560x1440%2F&psig=AOvVaw1UHVsI86NLiVDwXH3SaLMh&ust=1646554816981000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJD3wenErvYCFQAAAAAdAAAAABAD)
